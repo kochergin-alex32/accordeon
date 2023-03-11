@@ -15,18 +15,38 @@
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
     <script src='main.js'></script>
     <style>
+      header{
+        
+        height: 100px;
+        background-color: rgba(255, 166, 0, 0.747);
+        padding-top: 0;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color:white;
+        box-shadow: inset 0 0 5px blue;
+        text-shadow: 0 0 5px blue;
+        
+      } 
       .color{
         background-color: blue;
         border: none;
+        transition: 0.5s;
+       
        /* color:white;  */
       }
     
+      .color:hover{
+        text-shadow: 0 0 3px orange;
+        letter-spacing: 3px;
+      }
       .color:focus{
         border: none;
         background-color: blue;
         box-shadow: none;
-        /* color: white; */
-      }
+     }
+      
 
       .accordion {
             --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
@@ -52,20 +72,31 @@
     </style>
 </head>
 <body>
-
-
+<header class="">
+  <!-- <nav class="navbar bg-light header ">
+    <div class="container-fluid justify-content-center hed  d-flex flex-wrap ">
+      <a class="navbar-brand text d-flex flex-wrap" href="#">
+        <img src="/docs/5.2/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top"> 
+        Отделочные работы  в Брянске
+      </a>
+     
+    </div>
+   
+  </nav> -->
+  <h1 class="text"> Расценки на отделочные работы в Брянске</h1>
+</header>
 
 
 
       <div class="accordion accordion-flush text-light" id="accordionFlushExample">
-        <div class="accordion-item ">
-          <h2 class="accordion-header lit" id="flush-headingOne">
-            <button class="accordion-button  collapsed mb-3 text-light color" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        <div class="accordion-item  ">
+          <h2 class="accordion-header lit " id="flush-headingOne">
+            <button class="accordion-button  collapsed mb-3 text-light color " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
             потолок
             </button>
           </h2>
           <div id="flush-collapseOne" class="accordion-collapse collapse " aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">
+            <div class="accordion-body ">
               <table class="border-table">
                 <!-- <caption class="border border-danger">
                   Это пример таблицы, а это ее заголовок для описания содержимого.
